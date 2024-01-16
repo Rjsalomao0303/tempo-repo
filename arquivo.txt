@@ -1,0 +1,18 @@
+sudo apt install git
+
+# Configuração inicial do GitHub
+guit init
+git config --global user.name "Ricardo Salomão"
+git config --global user.email "rjsalomao@hotmail.com"
+git remote add origin git@github.com:url-copiada-do-git
+
+# Apos editado o projeto
+git add .
+git commit -m "A mensagem de envio"
+git push origin master
+
+#Chaves SSH
+ssh-keygen -t rsa -C "rjsalomao@hotmail.com"
+cat ~/.ssh/id_rsa.pub
+
+
